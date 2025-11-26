@@ -17,9 +17,9 @@ import com.launchdarkly.eventsource.background.BackgroundEventSource;
 import io.conduktor.demos.kafka.wikimedia.WikimediaChangeHandler;
 
 @Service
-public class WikimediaProducer implements CommandLineRunner {
+public class WikimediaProducerService implements CommandLineRunner {
 
-	private static final Logger log = LoggerFactory.getLogger(WikimediaProducer.class.getSimpleName());
+	private static final Logger log = LoggerFactory.getLogger(WikimediaProducerService.class.getSimpleName());
 
 	private final KafkaTemplate<String, String> kafkaTemplate;
 
@@ -32,7 +32,7 @@ public class WikimediaProducer implements CommandLineRunner {
 	@Value("${wikimedia.user-agent}")
 	private String userAgent;
 
-	public WikimediaProducer(KafkaTemplate<String, String> kafkaTemplate) {
+	public WikimediaProducerService(KafkaTemplate<String, String> kafkaTemplate) {
 		this.kafkaTemplate = kafkaTemplate;
 	}
 

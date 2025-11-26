@@ -1,0 +1,19 @@
+{
+	"properties": [
+		{
+			"name": "wikimedia.topic",
+			"type": "java.lang.String",
+			"description": "Kafka topic for Wikimedia"
+		},
+		{
+			"name": "wikimedia.url",
+			"type": "java.lang.String",
+			"description": "Wikimedia recent change URL"
+		},
+		{
+			"name": "wikimedia.user-agent",
+			"type": "java.lang.String",
+			"description": "Wikimedia user agent to set in header"
+		}
+	]
+}
